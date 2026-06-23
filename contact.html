@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Summit Grant Services</title>
+  <meta name="description" content="Contact Summit Grant Services for grant strategy, grant writing, grant management, funding research, and post-award support." />
+
+  <style>
+    :root {
+      --navy: #0b1f33;
+      --blue: #1f5f8b;
+      --light: #f5f7fa;
+      --text: #1f2933;
+      --muted: #667085;
+      --white: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 20px;
+      letter-spacing: -0.3px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover { color: var(--blue); }
+
+    .hero {
+      background: linear-gradient(135deg, #0b1f33 0%, #15395a 100%);
+      color: var(--white);
+      padding: 95px 24px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      color: #b8d7f4;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1.2px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 52px;
+      line-height: 1.05;
+      max-width: 900px;
+      margin: 0 0 24px;
+      letter-spacing: -1.6px;
+    }
+
+    .hero p {
+      font-size: 21px;
+      max-width: 850px;
+      color: #e8eef5;
+      margin-bottom: 0;
+    }
+
+    section {
+      padding: 80px 24px;
+    }
+
+    .section-title {
+      max-width: 820px;
+      margin-bottom: 44px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 0 0 14px;
+      letter-spacing: -0.9px;
+      color: var(--navy);
+    }
+
+    .section-title p {
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .contact-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 34px;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--blue);
+      color: var(--white);
+      padding: 14px 22px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .info-box {
+      background: var(--light);
+      border-radius: 6px;
+      padding: 30px;
+      margin-bottom: 24px;
+    }
+
+    .info-box h3 {
+      color: var(--navy);
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .info-box p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .info-box a {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      padding: 30px;
+      background: var(--white);
+      border-radius: 6px;
+      min-height: 220px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--navy);
+      font-size: 22px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .light-section {
+      background: var(--light);
+    }
+
+    footer {
+      background: var(--navy);
+      color: #d0d7df;
+      padding: 34px 24px;
+      font-size: 14px;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 800px) {
+      nav { display: none; }
+      h1 { font-size: 40px; }
+      .hero p { font-size: 18px; }
+      .contact-layout,
+      .grid-3 { grid-template-columns: 1fr; }
+      section { padding: 58px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logo">Summit Grant Services</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="sectors.html">Sectors</a>
+        <a href="funding.html">Funding</a>
+        <a href="approach.html">Approach</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Contact</div>
+        <h1>Start a conversation about your funding goals.</h1>
+        <p>
+          Whether you need grant research, proposal development, grant management, funding strategy,
+          or help deciding where to begin, Summit Grant Services can help evaluate the right path forward.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="contact-layout">
+
+          <div>
+            <div class="section-title">
+              <h2>Tell us what you are working on.</h2>
+              <p>
+                Use the form below to share a brief overview of your organization, funding need,
+                deadline, or project idea. We will follow up to discuss whether Summit is the right fit.
+              </p>
+            </div>
+
+            <div class="contact-card">
+              <form action="mailto:ben@summitgrantservices.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" required>
+
+                <label for="organization">Organization</label>
+                <input type="text" id="organization" name="Organization">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required>
+
+                <label for="service">What do you need help with?</label>
+                <select id="service" name="Service Interest">
+                  <option value="">Select one</option>
+                  <option>Grant Research</option>
+                  <option>Grant Strategy</option>
+                  <option>Grant Writing</option>
+                  <option>Grant Management</option>
+                  <option>Program Evaluation</option>
+                  <option>Funding Due Diligence</option>
+                  <option>Not sure yet</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="Message" placeholder="Briefly describe your project, funding need, deadline, or current challenge."></textarea>
+
+                <button class="button" type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+
+          <aside>
+            <div class="info-box">
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:ben@summitgrantservices.com">ben@summitgrantservices.com</a>
+              </p>
+            </div>
+
+            <div class="info-box">
+              <h3>Best fit inquiries</h3>
+              <p>
+                Summit supports nonprofits, public agencies, companies, healthcare organizations,
+                agricultural enterprises, educational institutions, and community-based organizations.
+              </p>
+            </div>
+
+            <div class="info-box">
+              <h3>Helpful details to include</h3>
+              <p>
+                Organization type, project idea, funding amount, deadline, funder name if known,
+                current grant capacity, and whether post-award support is needed.
+              </p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="light-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Common reasons clients contact Summit.</h2>
+          <p>
+            If one of these sounds familiar, we can help clarify the next step.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>“We know we need funding, but do not know where to start.”</h3>
+            <p>
+              Summit can conduct funding research, assess eligibility, and create a practical opportunity pipeline.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>“We found a grant, but need help deciding if it is worth pursuing.”</h3>
+            <p>
+              Summit can review fit, competitiveness, required materials, match, timing, and compliance expectations.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>“We received funding and need help managing it.”</h3>
+            <p>
+              Summit can support reporting, reimbursement documentation, compliance tracking, funder communication, and closeout.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© 2026 Summit Grant Services. All rights reserved.</div>
+      <div>Grant Strategy • Grant Writing • Grant Management</div>
+    </div>
+  </footer>
+
+</body>
+</html>
