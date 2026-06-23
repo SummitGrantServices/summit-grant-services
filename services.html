@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Summit Grant Services</title>
+  <meta name="description" content="Grant research, grant writing, grant strategy, grant management, program evaluation, and funding advisory services from Summit Grant Services." />
+
+  <style>
+    :root {
+      --navy: #0b1f33;
+      --blue: #1f5f8b;
+      --light: #f5f7fa;
+      --text: #1f2933;
+      --muted: #667085;
+      --white: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 20px;
+      letter-spacing: -0.3px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover { color: var(--blue); }
+
+    .hero {
+      background: linear-gradient(135deg, #0b1f33 0%, #15395a 100%);
+      color: var(--white);
+      padding: 95px 24px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      color: #b8d7f4;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1.2px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 52px;
+      line-height: 1.05;
+      max-width: 860px;
+      margin: 0 0 24px;
+      letter-spacing: -1.6px;
+    }
+
+    .hero p {
+      font-size: 21px;
+      max-width: 820px;
+      color: #e8eef5;
+      margin-bottom: 0;
+    }
+
+    section {
+      padding: 80px 24px;
+    }
+
+    .section-title {
+      max-width: 800px;
+      margin-bottom: 44px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 0 0 14px;
+      letter-spacing: -0.9px;
+      color: var(--navy);
+    }
+
+    .section-title p {
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      padding: 30px;
+      background: var(--white);
+      border-radius: 6px;
+      min-height: 255px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--navy);
+      font-size: 22px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .light-section {
+      background: var(--light);
+    }
+
+    .dark-section {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .dark-section h2,
+    .dark-section h3 {
+      color: var(--white);
+    }
+
+    .dark-section p {
+      color: #d0d7df;
+    }
+
+    .process {
+      display: grid;
+      gap: 18px;
+    }
+
+    .process-item {
+      border-left: 4px solid var(--blue);
+      padding: 20px 24px;
+      background: var(--white);
+    }
+
+    .process-item h3 {
+      margin: 0 0 6px;
+      color: var(--navy);
+    }
+
+    .process-item p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--blue);
+      color: var(--white);
+      padding: 14px 22px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .cta-section {
+      background: var(--light);
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      color: var(--navy);
+      font-size: 38px;
+      margin-bottom: 14px;
+    }
+
+    .cta-section p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 760px;
+      margin: 0 auto 28px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: #d0d7df;
+      padding: 34px 24px;
+      font-size: 14px;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 800px) {
+      nav { display: none; }
+      h1 { font-size: 40px; }
+      .hero p { font-size: 18px; }
+      .grid-3 { grid-template-columns: 1fr; }
+      section { padding: 58px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logo">Summit Grant Services</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="sectors.html">Sectors</a>
+        <a href="funding.html">Funding</a>
+        <a href="approach.html">Approach</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Services</div>
+        <h1>Grant and funding support across the full lifecycle.</h1>
+        <p>
+          Summit Grant Services helps organizations move from funding uncertainty to a clear,
+          actionable strategy — then supports the research, writing, submission, compliance,
+          and management work needed to pursue and administer funding effectively.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Core services.</h2>
+          <p>
+            Our work is designed for organizations that need more than a writer. We operate as a
+            strategic funding partner that can integrate with leadership, finance, program, and
+            development teams as needed.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Grant Research</h3>
+            <p>
+              We identify federal, state, local, foundation, corporate, and philanthropic funding
+              opportunities aligned with your organization’s mission, eligibility, geography,
+              project type, and timing.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Grant Strategy</h3>
+            <p>
+              We help determine which opportunities are worth pursuing, how to position the project,
+              what partnerships may strengthen the application, and how to build a practical funding pipeline.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Grant Writing</h3>
+            <p>
+              We prepare compelling, compliant proposal narratives, executive summaries, work plans,
+              attachments, and supporting documents tailored to funder requirements.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Budget Development</h3>
+            <p>
+              We support budget narratives, cost allocation logic, match documentation,
+              sustainability planning, and alignment between project scope and financial request.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Submission Management</h3>
+            <p>
+              We help manage deadlines, portals, required forms, attachments, registrations,
+              and final review so that submissions are complete, timely, and responsive.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Grant Management</h3>
+            <p>
+              We support post-award reporting, reimbursement processes, compliance tracking,
+              funder communication, documentation, performance monitoring, and closeout.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Advanced advisory services.</h2>
+          <p>
+            For complex initiatives, Summit provides specialized support that strengthens project design,
+            funder confidence, and long-term implementation readiness.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Program Evaluation</h3>
+            <p>
+              Evaluation planning, performance measures, logic models, outcome tracking, and reporting
+              frameworks that align with funder expectations and program goals.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Social Impact Analysis</h3>
+            <p>
+              Support defining, measuring, and communicating the social value of programs,
+              investments, and community-based initiatives.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Due Diligence Evaluation</h3>
+            <p>
+              Assessment of project readiness, funder fit, implementation capacity, compliance risk,
+              documentation gaps, and strategic viability before major funding pursuits.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Triple Bottom Line Strategy</h3>
+            <p>
+              Funding and project strategy that accounts for people, planet, and long-term financial
+              sustainability.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Grant Systems Support</h3>
+            <p>
+              Assistance navigating grant portals, funder systems, reporting platforms,
+              reimbursement workflows, registrations, and documentation procedures.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Fractional Grant Team Support</h3>
+            <p>
+              Flexible support for organizations that need experienced grant professionals without
+              building a full internal grants department.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Built for both institutional and mission-driven clients.</h2>
+          <p>
+            Summit is structured to support large companies, public agencies, nonprofits, healthcare
+            providers, community-based organizations, agricultural enterprises, and complex partnerships.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>For Executives</h3>
+            <p>
+              Clear funding strategy, opportunity prioritization, and practical guidance for deciding
+              where to invest time, staff capacity, and organizational resources.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>For Project Managers</h3>
+            <p>
+              Hands-on support translating project ideas into fundable scopes, timelines,
+              deliverables, budgets, and implementation plans.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>For Finance & Compliance Teams</h3>
+            <p>
+              Careful attention to budget structure, allowability, documentation, reporting,
+              reimbursement, and post-award compliance requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>How engagements typically work.</h2>
+          <p>
+            Every client is different, but most engagements follow a practical sequence designed to
+            reduce confusion and focus effort on the right opportunities.
+          </p>
+        </div>
+
+        <div class="process">
+          <div class="process-item">
+            <h3>1. Discovery</h3>
+            <p>We learn about your organization, priorities, current funding needs, capacity, and timing.</p>
+          </div>
+
+          <div class="process-item">
+            <h3>2. Opportunity Review</h3>
+            <p>We assess available funding options and identify the strongest-fit opportunities.</p>
+          </div>
+
+          <div class="process-item">
+            <h3>3. Strategy & Work Plan</h3>
+            <p>We define the recommended pursuit strategy, timeline, responsibilities, and materials needed.</p>
+          </div>
+
+          <div class="process-item">
+            <h3>4. Development & Submission</h3>
+            <p>We prepare, review, refine, and submit complete grant packages or support your team through submission.</p>
+          </div>
+
+          <div class="process-item">
+            <h3>5. Post-Award Support</h3>
+            <p>When funding is awarded, we can help manage reporting, compliance, documentation, and closeout.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>Need help deciding which grants are worth pursuing?</h2>
+        <p>
+          Summit can help you evaluate the funding landscape, clarify your best opportunities,
+          and build a practical strategy for moving forward.
+        </p>
+        <a class="button" href="mailto:ben@summitgrantservices.com">Contact Summit Grant Services</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© 2026 Summit Grant Services. All rights reserved.</div>
+      <div>Grant Strategy • Grant Writing • Grant Management</div>
+    </div>
+  </footer>
+
+</body>
+</html>
