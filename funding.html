@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Funding Sources | Summit Grant Services</title>
+  <meta name="description" content="Summit Grant Services helps organizations pursue federal grants, state grants, local funding, foundation grants, corporate philanthropy, and other strategic funding sources." />
+
+  <style>
+    :root {
+      --navy: #0b1f33;
+      --blue: #1f5f8b;
+      --light: #f5f7fa;
+      --text: #1f2933;
+      --muted: #667085;
+      --white: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 20px;
+      letter-spacing: -0.3px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover { color: var(--blue); }
+
+    .hero {
+      background: linear-gradient(135deg, #0b1f33 0%, #15395a 100%);
+      color: var(--white);
+      padding: 95px 24px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      color: #b8d7f4;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1.2px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 52px;
+      line-height: 1.05;
+      max-width: 900px;
+      margin: 0 0 24px;
+      letter-spacing: -1.6px;
+    }
+
+    .hero p {
+      font-size: 21px;
+      max-width: 850px;
+      color: #e8eef5;
+      margin-bottom: 0;
+    }
+
+    section {
+      padding: 80px 24px;
+    }
+
+    .section-title {
+      max-width: 820px;
+      margin-bottom: 44px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 0 0 14px;
+      letter-spacing: -0.9px;
+      color: var(--navy);
+    }
+
+    .section-title p {
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      padding: 30px;
+      background: var(--white);
+      border-radius: 6px;
+      min-height: 285px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--navy);
+      font-size: 22px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .light-section {
+      background: var(--light);
+    }
+
+    .dark-section {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .dark-section h2,
+    .dark-section h3 {
+      color: var(--white);
+    }
+
+    .dark-section p {
+      color: #d0d7df;
+    }
+
+    .process {
+      display: grid;
+      gap: 18px;
+    }
+
+    .process-item {
+      border-left: 4px solid var(--blue);
+      padding: 20px 24px;
+      background: var(--white);
+    }
+
+    .process-item h3 {
+      margin: 0 0 6px;
+      color: var(--navy);
+    }
+
+    .process-item p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .list-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .list-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 18px;
+      border-radius: 4px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--blue);
+      color: var(--white);
+      padding: 14px 22px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .cta-section {
+      background: var(--light);
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      color: var(--navy);
+      font-size: 38px;
+      margin-bottom: 14px;
+    }
+
+    .cta-section p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 780px;
+      margin: 0 auto 28px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: #d0d7df;
+      padding: 34px 24px;
+      font-size: 14px;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 800px) {
+      nav { display: none; }
+      h1 { font-size: 40px; }
+      .hero p { font-size: 18px; }
+      .grid-3,
+      .list-grid { grid-template-columns: 1fr; }
+      section { padding: 58px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logo">Summit Grant Services</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="sectors.html">Sectors</a>
+        <a href="funding.html">Funding</a>
+        <a href="approach.html">Approach</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Funding Sources</div>
+        <h1>Funding strategy across public, private, and philanthropic sources.</h1>
+        <p>
+          Summit Grant Services helps organizations understand the funding landscape, identify
+          realistic opportunities, and pursue the right mix of government, foundation, corporate,
+          and strategic funding sources.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>We help clients navigate the full funding ecosystem.</h2>
+          <p>
+            Strong funding strategies rarely depend on a single source. Summit helps clients evaluate
+            opportunities across multiple funder types and build a practical approach based on eligibility,
+            timing, competitiveness, capacity, and long-term fit.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Federal Grants</h3>
+            <p>
+              Support identifying, interpreting, and pursuing competitive and formula-based federal
+              grant opportunities across U.S. government agencies, including complex NOFOs, registrations,
+              attachments, budgets, and compliance requirements.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>State Grants</h3>
+            <p>
+              Research and proposal support for state-administered funding opportunities, including
+              agency grants, legislative appropriations, capital programs, workforce funds, health and
+              human services grants, and rural development initiatives.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>State Pass-Through Funding</h3>
+            <p>
+              Assistance with opportunities where federal funds flow through state agencies, regional
+              entities, councils of government, departments, authorities, or other intermediary organizations.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Local Government Funding</h3>
+            <p>
+              Support for funding opportunities issued by counties, cities, regional planning bodies,
+              local authorities, community development entities, and public-sector partnership programs.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Family Foundations</h3>
+            <p>
+              Research, relationship strategy, letters of inquiry, proposals, and positioning support
+              for private and family foundations aligned with mission, geography, program area, or community need.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Corporate Foundations</h3>
+            <p>
+              Support identifying and pursuing corporate foundation opportunities, community investment
+              programs, sponsorship-aligned funding, employee giving programs, and mission-aligned corporate philanthropy.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>High Net Worth Philanthropy</h3>
+            <p>
+              Strategic support for organizations approaching major donors, donor-advised funds,
+              private philanthropists, and high-capacity individuals where the case for impact must be clear and compelling.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Public-Private Partnerships</h3>
+            <p>
+              Support for complex projects that require blended funding, partner coordination,
+              government alignment, private investment, philanthropic support, or multi-stakeholder implementation.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Innovation & Non-Dilutive Funding</h3>
+            <p>
+              Assistance for companies, research teams, and institutions exploring non-dilutive capital,
+              technology demonstration funding, commercialization programs, and mission-aligned public funding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Not every funding opportunity is worth pursuing.</h2>
+          <p>
+            One of the most valuable parts of funding strategy is knowing when to move forward —
+            and when not to. Summit helps clients evaluate opportunity fit before investing significant
+            time and organizational capacity.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Eligibility</h3>
+            <p>
+              We review applicant eligibility, geography, entity type, project type, match requirements,
+              partnership requirements, and threshold criteria before recommending a pursuit.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Competitiveness</h3>
+            <p>
+              We consider scoring criteria, funder priorities, prior awards, project readiness,
+              partnerships, outcomes, budget alignment, and whether the opportunity is realistically winnable.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Organizational Capacity</h3>
+            <p>
+              We help clients assess the staff time, documentation, reporting, compliance,
+              financial management, and implementation obligations that come with each opportunity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Funding strategy should match the project.</h2>
+          <p>
+            Different projects require different funding pathways. Summit helps clients align the
+            opportunity with the real purpose, scale, timing, and readiness of the project.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Program Funding</h3>
+            <p>
+              Grants and philanthropic support for service delivery, program expansion, pilot projects,
+              outreach, direct services, and community-based initiatives.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Capital & Infrastructure</h3>
+            <p>
+              Funding strategies for facilities, equipment, construction, renovation, infrastructure,
+              transportation, broadband, energy, water, and other capital-intensive projects.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Capacity Building</h3>
+            <p>
+              Support for staffing, planning, evaluation, systems development, technology,
+              organizational development, partnerships, and long-term sustainability.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Research & Demonstration</h3>
+            <p>
+              Funding for technical, scientific, innovation, feasibility, prototype, pilot,
+              demonstration, and evidence-building projects.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Planning & Strategy</h3>
+            <p>
+              Support for needs assessments, strategic plans, feasibility studies, community plans,
+              environmental reviews, engineering, and implementation planning.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Evaluation & Impact</h3>
+            <p>
+              Funding and advisory support for performance measurement, program evaluation,
+              data systems, impact reporting, and outcome-based funding models.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our funding research process.</h2>
+          <p>
+            Summit’s research process is designed to produce useful decisions, not just long lists of grants.
+          </p>
+        </div>
+
+        <div class="process">
+          <div class="process-item">
+            <h3>1. Understand the client and project</h3>
+            <p>We review the organization, goals, geography, entity type, funding need, timeline, and readiness.</p>
+          </div>
+
+          <div class="process-item">
+            <h3>2. Search across relevant funding sources</h3>
+            <p>We examine government, foundation, corporate, philanthropic, and specialized funding channels.</p>
+          </div>
+
+          <div class="process-item">
+            <h3>3. Screen for eligibility and fit</h3>
+            <p>We assess whether the opportunity truly fits the client, project, budget, timing, and compliance capacity.</p>
+          </div>
+
+          <div class="process-item">
+            <h3>4. Prioritize the strongest opportunities</h3>
+            <p>We help clients focus on the opportunities most likely to be realistic, strategic, and worth pursuing.</p>
+          </div>
+
+          <div class="process-item">
+            <h3>5. Build an actionable funding pipeline</h3>
+            <p>We organize opportunities by deadline, fit, next steps, required materials, and recommended pursuit strategy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Common funder priorities we help clients address.</h2>
+          <p>
+            Summit helps clients frame projects around clear public, social, economic, environmental,
+            and organizational value.
+          </p>
+        </div>
+
+        <div class="list-grid">
+          <div class="list-item">Community Impact</div>
+          <div class="list-item">Economic Mobility</div>
+          <div class="list-item">Healthcare Access</div>
+          <div class="list-item">Rural Development</div>
+          <div class="list-item">Workforce Development</div>
+          <div class="list-item">Environmental Stewardship</div>
+          <div class="list-item">Food Systems</div>
+          <div class="list-item">Public Safety</div>
+          <div class="list-item">Innovation</div>
+          <div class="list-item">Capacity Building</div>
+          <div class="list-item">Infrastructure</div>
+          <div class="list-item">Measurable Outcomes</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>Need help finding the right funding sources?</h2>
+        <p>
+          Summit can help you evaluate the funding landscape, prioritize the best-fit opportunities,
+          and build a practical strategy for pursuing grants and other funding.
+        </p>
+        <a class="button" href="mailto:ben@summitgrantservices.com">Contact Summit Grant Services</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© 2026 Summit Grant Services. All rights reserved.</div>
+      <div>Grant Strategy • Grant Writing • Grant Management</div>
+    </div>
+  </footer>
+
+</body>
+</html>
