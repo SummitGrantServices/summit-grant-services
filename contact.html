@@ -65,6 +65,24 @@
 
     nav a:hover { color: var(--blue); }
 
+    nav a.nav-button {
+      display: inline-block;
+      background: var(--blue);
+      color: var(--white);
+      padding: 11px 20px;
+      border-radius: 4px;
+      margin-left: 32px;
+      font-weight: 700;
+      box-shadow: 0 2px 4px rgba(11, 31, 51, 0.15);
+      transition: background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    nav a.nav-button:hover {
+      background: var(--navy);
+      color: var(--white);
+      box-shadow: 0 3px 8px rgba(11, 31, 51, 0.22);
+    }
+
     .hero {
       background: linear-gradient(135deg, #0b1f33 0%, #15395a 100%);
       color: var(--white);
@@ -265,7 +283,7 @@
         <a href="funding.html">Funding</a>
         <a href="approach.html">Approach</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a class="nav-button" href="contact.html">Contact Us</a>
       </nav>
     </div>
   </header>
