@@ -270,6 +270,22 @@
       flex-wrap: wrap;
     }
 
+    footer a {
+      color: #b8d7f4;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      color: var(--white);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
     @media (max-width: 800px) {
       nav { display: none; }
       h1 { font-size: 40px; }
@@ -582,8 +598,14 @@
 
   <footer>
     <div class="container">
-      <div>© 2026 Summit Grant Services. All rights reserved.</div>
-      <div>Grant Strategy • Grant Writing • Grant Management</div>
+      <div>
+        <div>© 2026 Summit Grant Services. All rights reserved.</div>
+        <div>Grant Strategy • Grant Writing • Grant Management</div>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
     </div>
   </footer>
 
