@@ -1,0 +1,6 @@
+# https://www.summitgrantservices.com/robots.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.summitgrantservices.com/sitemap.xml
