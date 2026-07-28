@@ -172,6 +172,11 @@
       min-height: 285px;
     }
 
+    .card-link { color: inherit; text-decoration: none; }
+    .card-link:hover { color: var(--blue); }
+    .card:has(.card-link) { transition: border-color .2s ease, box-shadow .2s ease; }
+    .card:has(.card-link):hover { border-color: var(--blue); box-shadow: 0 3px 10px rgba(11,31,51,.10); }
+
     .card h3 {
       margin-top: 0;
       color: var(--navy);
@@ -335,7 +340,7 @@
 
         <div class="grid-3">
           <div class="card">
-            <h3>Nonprofits & Community-Based Organizations</h3>
+            <h3><a class="card-link" href="sector-nonprofits-community-based-organizations.html">Nonprofits & Community-Based Organizations</a></h3>
             <p>
               We support nonprofits working in human services, community development, aging services,
               youth programs, housing, food security, workforce, public safety, and other mission-driven areas.
@@ -343,7 +348,7 @@
           </div>
 
           <div class="card">
-            <h3>Healthcare & Behavioral Health</h3>
+            <h3><a class="card-link" href="sector-healthcare-behavioral-health.html">Healthcare & Behavioral Health</a></h3>
             <p>
               We help healthcare providers, rural health organizations, behavioral health providers,
               clinics, and community health initiatives pursue funding for access, workforce, prevention,
@@ -352,7 +357,7 @@
           </div>
 
           <div class="card">
-            <h3>Agriculture & Food Systems</h3>
+            <h3><a class="card-link" href="sector-agriculture-food-systems.html">Agriculture & Food Systems</a></h3>
             <p>
               We support producers, agricultural businesses, food systems organizations, conservation
               initiatives, rural development projects, supply chain improvements, and innovation-focused
@@ -361,7 +366,7 @@
           </div>
 
           <div class="card">
-            <h3>Government & Public Agencies</h3>
+            <h3><a class="card-link" href="sector-government-public-agencies.html">Government & Public Agencies</a></h3>
             <p>
               We assist local governments, regional agencies, public authorities, and public-sector partners
               with grant research, application development, compliance planning, and post-award management.
@@ -369,7 +374,7 @@
           </div>
 
           <div class="card">
-            <h3>Education & Workforce</h3>
+            <h3><a class="card-link" href="sector-education-workforce.html">Education & Workforce</a></h3>
             <p>
               We help schools, colleges, workforce organizations, training providers, and education partners
               pursue funding for programming, facilities, career pathways, apprenticeships, and student support.
@@ -377,7 +382,7 @@
           </div>
 
           <div class="card">
-            <h3>Community & Economic Development</h3>
+            <h3><a class="card-link" href="sector-community-economic-development.html">Community & Economic Development</a></h3>
             <p>
               We support projects involving infrastructure, housing, downtown revitalization, economic mobility,
               small business ecosystems, resilience, transportation, and place-based community investment.
@@ -385,7 +390,7 @@
           </div>
 
           <div class="card">
-            <h3>Energy, Environment & Conservation</h3>
+            <h3><a class="card-link" href="sector-energy-environment-conservation.html">Energy, Environment & Conservation</a></h3>
             <p>
               We assist with funding strategies for conservation, water, resilience, energy efficiency,
               clean technology, environmental restoration, and sustainability-focused projects.
@@ -393,7 +398,7 @@
           </div>
 
           <div class="card">
-            <h3>Research, Science & Innovation</h3>
+            <h3><a class="card-link" href="sector-research-science-innovation.html">Research, Science & Innovation</a></h3>
             <p>
               With access to Ph.D.-level expertise across scientific fields, Summit can support research-driven,
               technical, innovation, and commercialization-oriented funding pursuits.
@@ -401,7 +406,7 @@
           </div>
 
           <div class="card">
-            <h3>Corporate & Institutional Initiatives</h3>
+            <h3><a class="card-link" href="sector-corporate-institutional-initiatives.html">Corporate & Institutional Initiatives</a></h3>
             <p>
               We help companies and institutional teams evaluate non-dilutive funding, public-private
               partnerships, government programs, foundation alignment, and impact-oriented funding strategies.
